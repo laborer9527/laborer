@@ -9,7 +9,8 @@ import matplotlib
 #matplotlib显示中文时候 需要加入设定
 matplotlib.rc("font", family='AR PL UMing CN')
 
-
+# 气球特效
+st.balloons()
 
 #竟然还支持 emoji表情
 custom_emoji = ':blush:'
@@ -128,6 +129,8 @@ for i in range(100):
     bar.progress(i+1)
     time.sleep(0.1)
 '运行结束!'
+# 下雪特效
+st.snow()
 
 
 # 11. st.file_uploader() 上传文件
