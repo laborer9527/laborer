@@ -40,7 +40,7 @@ def chat_click():
 
 #st.image('114.jpg, caption='Sunrise by the mountains')
 
-st.image(image, width=80)
+st.image('114.jpg', width=80)
 st.title("My ChatBot")
 
 user_input=st.text_input("You:", key="user")
