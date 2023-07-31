@@ -37,11 +37,8 @@ def chat_click():
         st.session_state['prompts'].append({"role": "assistant", "content": output})
         st.session_state['user'] = ""
 
-from PIL import Image
 
-image = Image.open('./114.png')
-
-#st.image(image, caption='Sunrise by the mountains')
+#st.image('114.jpg, caption='Sunrise by the mountains')
 
 st.image(image, width=80)
 st.title("My ChatBot")
