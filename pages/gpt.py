@@ -37,7 +37,13 @@ def chat_click():
         st.session_state['prompts'].append({"role": "assistant", "content": output})
         st.session_state['user'] = ""
 
-st.image("{Your logo}", width=80)
+from PIL import Image
+
+image = Image.open('https://cdn.staticfile.org/emoji-datasource-apple/14.0.0/img/apple/64/1f914.png')
+
+#st.image(image, caption='Sunrise by the mountains')
+
+st.image(image, width=80)
 st.title("My ChatBot")
 
 user_input=st.text_input("You:", key="user")
