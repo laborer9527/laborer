@@ -2,7 +2,7 @@ import openai
 import streamlit as st
 from streamlit_chat import message
 
-
+#密码验证
 if 'pwd' not in st.session_state:
     password = st.text_input("请输入密码")
     if len(password)==0 :
