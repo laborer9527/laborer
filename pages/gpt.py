@@ -39,7 +39,7 @@ def chat_click():
 
 from PIL import Image
 
-image = Image.open('https://cdn.staticfile.org/emoji-datasource-apple/14.0.0/img/apple/64/1f914.png')
+image = Image.open('114.png')
 
 #st.image(image, caption='Sunrise by the mountains')
 
