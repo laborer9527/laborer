@@ -39,7 +39,7 @@ def chat_click():
 
 from PIL import Image
 
-image = Image.open('114.png')
+image = Image.open('./114.png')
 
 #st.image(image, caption='Sunrise by the mountains')
 
