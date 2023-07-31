@@ -3,13 +3,19 @@ import streamlit as st
 from streamlit_chat import message
 
 
-password = st.text_input("请输入密码")
-if len(password)==0 :
-    st.write("请输入密码")
-    st.stop()
-if  password != st.secrets["pwd"]:
-    st.write("密码错误")
-    st.stop()
+if 'pwd' not in st.session_state:
+    password = st.text_input("请输入密码")
+    if len(password)==0 :
+        st.write("请输入密码")
+        st.stop()
+    if  password != st.secrets["pwd"]:
+        st.write("密码错误")
+        st.stop()
+    if password==st.secrets["pwd"] :
+        st.session_state['pwd'] = password
+
+
+
     
 openai.api_key = st.secrets["openaikey"]
 if 'prompts' not in st.session_state:
